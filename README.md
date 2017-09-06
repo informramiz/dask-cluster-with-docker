@@ -14,6 +14,7 @@ This should be straightforward on all linux and osx systems.
 
 
 ## References
-[Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
-[Dask Distributed](http://distributed.readthedocs.io/en/latest/install.html)
-[Dask](https://dask.readthedocs.io/en/latest/install.html)
+* [dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+* [dask distributed](http://distributed.readthedocs.io/en/latest/install.html)
+* [dask](https://dask.readthedocs.io/en/latest/install.html)
+* [psutil (dask dependency)](https://pythonhosted.org/psutil/)

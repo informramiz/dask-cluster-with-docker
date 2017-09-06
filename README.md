@@ -9,7 +9,7 @@ Of course this won't start multiple machines in the cloud and run a actual real 
 
 You only have to provision the docker container by implementing the dockerfile and run the bootstrap bash script. The solution can be expressed in as little as 5 lines.
 
-This should be straightforward on all linux and osx systems. Windows users are probably better off running a virtual machine with a linux distro but theoretically docker and docker-compose should also run native on windows.
+This should be straightforward on all linux and osx systems. Windows users are probably better off running a virtual machine with a linux distro but theoretically docker and docker-compose should also run native on Windows.
 
 
 ## Notes

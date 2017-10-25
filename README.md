@@ -1,23 +1,36 @@
-# Datarevenue Code Challenge
+# Goal
 
-Congratulations for making it to the Code Challenge. In this challenge the goal is to provision a docker container sucht that it is able to run a dask-cluster. This might sound complicated but it the challenge comes with a run configuration already. 
+The goal is to provision a docker container such that it is able to run a dask-cluster. 
 
-Of course this won't start multiple machines in the cloud and run a actual real cluster but instead it uses docker-compose and docker to emulate this situation. You need both installed on your system before you can proceed (We use this tools on a daily basis at datarevenue so it won't be in vain).
+Of course this won't start multiple machines in the cloud and run a actual real cluster but instead it uses docker-compose and docker to emulate this situation. You need both installed on your system before you can proceed.
 
 * [How to install docker](https://docs.docker.com/engine/installation/)
 * [How to install docker-compose](https://docs.docker.com/compose/install/)
 
-You only have to provision the docker container by implementing the dockerfile and run the bootstrap bash script. The solution can be expressed in as little as 5 lines.
-
 This should be straightforward on all linux and osx systems. Windows users are probably better off running a virtual machine with a linux distro but theoretically docker and docker-compose should also run native on Windows.
 
+## Run
 
-## Notes
-- This should take you between 20-60 minutes
-- Use python3
-- The dockerfile should inherit from `ubuntu:16.04` 
-- You are not allowed to change any files.
-- execute bootstrap.sh and email us the output along with your solution.
+Execute following command to run
+
+```
+./bootstrap.sh
+```
+
+After running this command, following output is generated.
+
+```
+worker_1          | INFO:__main__:======= TESTING DASK CLUSTER ========
+dask-scheduler_1  | distributed.scheduler - INFO - Receive client connection: Client-8eb8c2e2-b948-11e7-8001-0242ac130003
+worker_1          | INFO:__main__:Submitting job...
+worker_1          | INFO:__main__:Result:
+worker_1          | col1    49995000
+worker_1          | col2    49995000
+worker_1          | col1      125250
+worker_1          | col2     4884249
+worker_1          | dtype: int64
+worker_1          | INFO:__main__:======= CLUSTER OK ========
+```
 
 
 ## References
